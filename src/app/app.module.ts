@@ -6,7 +6,6 @@ import { RouterModule } from '@angular/router';
 import { ChartModule } from 'angular-highcharts';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import 'hammerjs';
 
 import { routes } from './app.routes';
 import { AppComponent } from './app.component';

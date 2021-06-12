@@ -3,7 +3,9 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Validators, FormControl, FormGroupDirective, NgForm } from '@angular/forms';
 
 import * as _ from 'lodash';
-import { MatDialog, MatSnackBar, ErrorStateMatcher } from '@angular/material';
+import { ErrorStateMatcher } from '@angular/material/core';
+import { MatDialog } from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { PortfolioService, DaytradeService, ReportingService, BacktestService } from '../shared';
 import { GlobalSettingsService } from '../settings/global-settings.service';
 

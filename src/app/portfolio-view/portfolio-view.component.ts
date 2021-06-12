@@ -6,7 +6,7 @@ import * as moment from 'moment';
 import { Holding } from '../shared/models';
 import { PortfolioTableComponent } from '../portfolio-table/portfolio-table.component';
 import { CartService } from '../shared/services/cart.service';
-import { MatSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { ExcelService } from '../shared/services/excel-service.service';
 import { SmartOrder } from '../shared/models/smart-order';
 

@@ -1,6 +1,6 @@
 import { Component, OnChanges, Input, OnInit, ViewChild, SimpleChanges } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
-import { MatDialog } from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
 import 'rxjs/add/operator/takeWhile';
 
 import { Chart } from 'angular-highcharts';

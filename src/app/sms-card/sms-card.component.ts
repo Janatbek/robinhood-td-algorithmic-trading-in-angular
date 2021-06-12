@@ -5,7 +5,7 @@ import { SelectItem } from 'primeng/components/common/selectitem';
 import * as _ from 'lodash';
 import { BacktestService, IndicatorsService, PortfolioService, DaytradeService } from '@shared/services';
 import { ConfirmDialogComponent } from '../confirm-dialog/confirm-dialog.component';
-import { MatDialog } from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
 import { ClientSmsService } from '@shared/services/client-sms.service';
 import { GlobalSettingsService } from '../settings/global-settings.service';
 import { TimerObservable } from 'rxjs/observable/TimerObservable';

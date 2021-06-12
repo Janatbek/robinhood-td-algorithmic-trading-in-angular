@@ -3,7 +3,9 @@ import { CommonModule } from '@angular/common';
 import { SettingControlsComponent } from './setting-controls/setting-controls.component';
 import { TimepickerModule } from 'ngx-bootstrap/timepicker';
 import { FormsModule } from '@angular/forms';
-import { MatGridListModule, MatTooltipModule, MatSlideToggleModule } from '@angular/material';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { DropdownModule } from 'primeng/dropdown';
 
 @NgModule({
