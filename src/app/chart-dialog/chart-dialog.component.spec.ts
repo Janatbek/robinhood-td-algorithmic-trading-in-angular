@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ChartDialogComponent } from './chart-dialog.component';
 
@@ -6,7 +6,7 @@ describe('ChartDialogComponent', () => {
   let component: ChartDialogComponent;
   let fixture: ComponentFixture<ChartDialogComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ ChartDialogComponent ]
     })

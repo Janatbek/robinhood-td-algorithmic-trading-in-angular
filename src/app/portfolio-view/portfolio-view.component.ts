@@ -16,9 +16,9 @@ import { SmartOrder } from '../shared/models/smart-order';
   styleUrls: ['./portfolio-view.component.css']
 })
 export class PortfolioViewComponent implements AfterViewInit {
-  @ViewChild('sidenav', {static: false}) sidenav: MatSidenav;
+  @ViewChild('sidenav') sidenav: MatSidenav;
 
-  @ViewChild(PortfolioTableComponent, {static: false})
+  @ViewChild(PortfolioTableComponent)
   private portfolioTableComponent: PortfolioTableComponent;
 
   portfolioData: Holding[];

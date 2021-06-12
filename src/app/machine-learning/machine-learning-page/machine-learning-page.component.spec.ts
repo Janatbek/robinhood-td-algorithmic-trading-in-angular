@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { MachineLearningPageComponent } from './machine-learning-page.component';
 
@@ -6,7 +6,7 @@ describe('MachineLearningPageComponent', () => {
   let component: MachineLearningPageComponent;
   let fixture: ComponentFixture<MachineLearningPageComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ MachineLearningPageComponent ]
     })

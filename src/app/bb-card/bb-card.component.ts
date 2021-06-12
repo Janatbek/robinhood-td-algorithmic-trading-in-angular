@@ -38,7 +38,7 @@ import { ClientSmsService } from '@shared/services/client-sms.service';
   styleUrls: ['./bb-card.component.css']
 })
 export class BbCardComponent implements OnInit, OnChanges {
-  @ViewChild('stepper', { static: false }) stepper;
+  @ViewChild('stepper') stepper;
   @Input() order: SmartOrder;
   @Input() tearDown: boolean;
   chart: Chart;

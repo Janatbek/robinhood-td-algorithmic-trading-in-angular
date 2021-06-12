@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { MlBatchCardComponent } from './ml-batch-card.component';
 
@@ -6,7 +6,7 @@ describe('MlBatchCardComponent', () => {
   let component: MlBatchCardComponent;
   let fixture: ComponentFixture<MlBatchCardComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ MlBatchCardComponent ]
     })

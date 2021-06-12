@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { TradeViewComponent } from './trade-view.component';
 
@@ -6,7 +6,7 @@ describe('MainViewComponent', () => {
   let component: TradeViewComponent;
   let fixture: ComponentFixture<TradeViewComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ TradeViewComponent ]
     })

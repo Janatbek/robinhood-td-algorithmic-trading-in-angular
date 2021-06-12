@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { XlsImportComponent } from './xls-import.component';
 
@@ -6,7 +6,7 @@ describe('XlsImportComponent', () => {
   let component: XlsImportComponent;
   let fixture: ComponentFixture<XlsImportComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ XlsImportComponent ]
     })

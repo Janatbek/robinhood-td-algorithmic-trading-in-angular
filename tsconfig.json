@@ -5,7 +5,7 @@
     "outDir": "./dist/public",
     "sourceMap": true,
     "declaration": false,
-    "module": "commonjs",
+    "module": "esnext",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,

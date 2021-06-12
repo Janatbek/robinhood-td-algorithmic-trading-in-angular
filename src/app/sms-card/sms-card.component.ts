@@ -17,7 +17,7 @@ import * as moment from 'moment-timezone';
   styleUrls: ['./sms-card.component.css']
 })
 export class SmsCardComponent implements OnInit {
-  @ViewChild('stepper', { static: false }) stepper;
+  @ViewChild('stepper') stepper;
 
   alive: boolean;
 

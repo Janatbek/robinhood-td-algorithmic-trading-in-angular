@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { RedirectLoginDialogComponent } from './redirect-login-dialog.component';
 
@@ -6,7 +6,7 @@ describe('RedirectLoginDialogComponent', () => {
   let component: RedirectLoginDialogComponent;
   let fixture: ComponentFixture<RedirectLoginDialogComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ RedirectLoginDialogComponent ]
     })

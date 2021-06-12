@@ -131,7 +131,7 @@ import { PieAlloctComponent } from './pie-alloct/pie-alloct.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' }),
     ChartModule,
     OverviewModule,
     SettingsModule,

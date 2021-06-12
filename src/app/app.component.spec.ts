@@ -1,4 +1,4 @@
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed, waitForAsync } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -67,7 +67,7 @@ import { OptionsViewComponent } from './options-view/options-view.component';
 import { APP_BASE_HREF } from '@angular/common';
 
 describe('AppComponent', () => {
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
@@ -97,8 +97,9 @@ describe('AppComponent', () => {
         FormsModule,
         ReactiveFormsModule,
         RouterModule.forRoot(routes, {
-          enableTracing: true
-        }),
+    enableTracing: true,
+    relativeLinkResolution: 'legacy'
+}),
         MatMenuModule,
         MatToolbarModule,
         MatIconModule,
@@ -137,17 +138,17 @@ describe('AppComponent', () => {
       ]
     }).compileComponents();
   }));
-  xit('createshould create the app', async(() => {
+  xit('createshould create the app', waitForAsync(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   }));
-  it(`should have as title 'app'`, async(() => {
+  it(`should have as title 'app'`, waitForAsync(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app.title).toEqual('app');
   }));
-  xit('createshould render title in a h1 tag', async(() => {
+  xit('createshould render title in a h1 tag', waitForAsync(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
